@@ -6,7 +6,7 @@ const resetButtonEl = document.querySelector('.counter__reset-button');
 
 const counterValueEl = document.querySelector('.counter__value');
 
-resetButtonEl.addEventListener('click', function() {
+resetButtonEl.addEventListener('click', () => {
     // set value to 0
     counterValueEl.textContent = 0;
     // reset background color
@@ -20,7 +20,7 @@ resetButtonEl.addEventListener('click', function() {
     resetButtonEl.blur();
 });
 
-function incrementCounter() {
+ const incrementCounter = () => {
     // get current value of counter
     const currentValue = counterValueEl.textContent; 
     // convert value to number type
@@ -52,7 +52,7 @@ function incrementCounter() {
 
 increaseButtonEl.addEventListener('click', incrementCounter);
 
-decreaseButtonEl.addEventListener('click', function() {
+decreaseButtonEl.addEventListener('click', () => {
     // get current value of counter
         const currentValue = counterValueEl.textContent; 
     // convert value to number type
